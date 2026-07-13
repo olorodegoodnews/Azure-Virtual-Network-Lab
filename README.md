@@ -16,6 +16,51 @@ This project demonstrates how I deployed and configured an Azure Virtual Network
 ## Azure Services Used
 
 
+## Step 4 – Create a Network Security Group (NSG)
+
+### Purpose
+
+A Network Security Group (NSG) is an Azure networking service that controls inbound and outbound network traffic using security rules. It acts as a virtual firewall to help protect Azure resources from unauthorized access.
+
+### Configuration
+
+| Setting | Value |
+|---------|-------|
+| Network Security Group | Olorode-NSG |
+| Resource Group | Goodnews |
+| Region | East US |
+
+### Why This Is Important
+
+Network Security Groups provide an additional layer of security by filtering network traffic based on rules. This helps ensure that only authorized traffic can reach resources deployed within the Virtual Network.
+
+### Screenshot
+
+![Network Security Group Overview](screenshots/05-network-security-group-overview.png)
+
+## Key Learning
+
+During this step, I created a Network Security Group (NSG) to secure my Azure network. I learned that NSGs use inbound and outbound security rules to control which traffic is allowed or denied, helping protect Azure resources from unauthorized access.
+
+## AZ-104 Skills Covered
+
+- Azure Network Security Groups
+- Network Security
+- Traffic Filtering
+- Azure Networking
+
+## Interview Question
+
+**Question:** What is a Network Security Group (NSG) in Azure?
+
+**Answer:** A Network Security Group (NSG) is an Azure networking service that controls inbound and outbound traffic using security rules. It can be associated with a subnet or a network interface to protect Azure resources by allowing or denying specific types of network traffic.
+
+
+## Real-World Use Case
+
+In a production environment, Network Security Groups are commonly used to restrict access to Azure resources. For example, a company might allow HTTP (port 80) and HTTPS (port 443) traffic to a web server while blocking all other inbound connections to reduce the attack surface.
+
+
 
 ## Step 2 – Create a Resource Group
 
