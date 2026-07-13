@@ -15,25 +15,61 @@ This project demonstrates how I deployed and configured an Azure Virtual Network
 
 ## Azure Services Used
 
-- Azure Resource Groups
-- Azure Virtual Network
-- Azure Subnets
 
-## Step 1 – Create a Virtual Network
+
+## Step 2 – Create a Resource Group
 
 ### Purpose
 
-A Virtual Network (VNet) provides a private network in Azure that allows Azure resources to communicate securely with each other, the internet, and on-premises networks.
+A Resource Group is a logical container in Microsoft Azure that holds related resources for a project. It makes it easier to deploy, manage, monitor, and delete resources together.
 
 ### Configuration
 
 | Setting | Value |
 |---------|-------|
-| Virtual Network Name | olorode |
-| Resource Group | Goodnews |
-| Address Space | 10.0.0.0/16 |
+| Resource Group Name | Goodnews |
+| Region | East US |
+
+### Why This Is Important
+
+Using a Resource Group allows all resources for this networking project to be managed as a single unit. This simplifies administration and helps with cost management and organization.
 
 ### Screenshot
 
+![Resource Group Overview](screenshots/02-resource-group-overview.png)
+
+
+## Key Learning
+
+During this step, I learned that every Azure resource should belong to a Resource Group. This provides better organization, simplifies management, and allows related resources to be deleted together when they are no longer needed.
+
+
+## Step 2 – Create a Resource Group
+
+### Purpose
+
+A Resource Group is a logical container in Microsoft Azure that holds related resources for a project. It makes it easier to deploy, manage, monitor, and delete resources together.
+
+### Configuration
+
+| Setting | Value |
+|---------|-------|
+| Resource Group Name | Goodnews |
+| Region | East US |
+
+### Why This Is Important
+
+Using a Resource Group allows all resources for this networking project to be managed as a single unit. This simplifies administration and helps with cost management and organization.
+
+### Screenshot
+
+![Resource Group Overview](screenshots/02-resource-group-overview.png)
+
+
+## Interview Question
+
+**Question:** What is a Resource Group in Azure?
+
+**Answer:** A Resource Group is a logical container that groups related Azure resources together. It helps organize, manage, monitor, and control access to resources within a project.
 ![Virtual Network Overview](screenshots/01-vnet-overview.png)
 - Azure Network Security Groups
