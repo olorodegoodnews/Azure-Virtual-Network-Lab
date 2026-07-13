@@ -16,7 +16,7 @@ This project demonstrates how I deployed and configured an Azure Virtual Network
 ## Azure Services Used
 
 
-## Step 4 – Create a Network Security Group (NSG)
+## Step 1 – Create a Network Security Group (NSG)
 
 ### Purpose
 
@@ -59,34 +59,6 @@ During this step, I created a Network Security Group (NSG) to secure my Azure ne
 ## Real-World Use Case
 
 In a production environment, Network Security Groups are commonly used to restrict access to Azure resources. For example, a company might allow HTTP (port 80) and HTTPS (port 443) traffic to a web server while blocking all other inbound connections to reduce the attack surface.
-
-
-
-## Step 2 – Create a Resource Group
-
-### Purpose
-
-A Resource Group is a logical container in Microsoft Azure that holds related resources for a project. It makes it easier to deploy, manage, monitor, and delete resources together.
-
-### Configuration
-
-| Setting | Value |
-|---------|-------|
-| Resource Group Name | Goodnews |
-| Region | East US |
-
-### Why This Is Important
-
-Using a Resource Group allows all resources for this networking project to be managed as a single unit. This simplifies administration and helps with cost management and organization.
-
-### Screenshot
-
-![Resource Group Overview](screenshots/02-resource-group-overview.png)
-
-
-## Key Learning
-
-During this step, I learned that every Azure resource should belong to a Resource Group. This provides better organization, simplifies management, and allows related resources to be deleted together when they are no longer needed.
 
 
 ## Step 2 – Create a Resource Group
@@ -159,3 +131,43 @@ In this step, I learned how to create and configure subnets within an Azure Virt
 
 **Answer:** A subnet is a smaller network within a Virtual Network. It allows Azure resources to be organized into separate network segments, improving security, performance, and management.
 
+
+## Step 4 – Review Inbound Security Rules
+
+### Purpose
+
+Inbound security rules control the traffic that is allowed to enter Azure resources. These rules help protect resources by permitting only approved network connections.
+
+### Default Inbound Rules
+
+Azure automatically creates several default inbound rules for every Network Security Group.
+
+| Priority | Rule | Action |
+|----------|------|--------|
+| 65000 | AllowVNetInBound | Allow |
+| 65001 | AllowAzureLoadBalancerInBound | Allow |
+| 65500 | DenyAllInBound | Deny |
+
+### Why This Is Important
+
+These default rules provide a secure baseline. Additional custom rules can be added to allow services such as HTTP, HTTPS, RDP, or SSH when required.
+
+### Screenshot
+
+![Inbound Security Rules](screenshots/07-inbound-security-rules.png)
+
+## Key Learning
+
+During this step, I learned that inbound security rules determine which incoming network traffic is allowed or denied. Azure automatically applies default rules, but administrators can create custom rules to meet specific application and security requirements.
+
+## Real-World Use Case
+
+A company hosting a public website may create an inbound rule to allow HTTP (port 80) and HTTPS (port 443) traffic while denying all other inbound connections. This helps reduce the attack surface and protects the application from unauthorized access.
+
+## AZ-104 Skills Covered
+
+- Azure Network Security Groups
+- Inbound Security Rules
+- Network Traffic Filtering
+- Azure Networking Security
+- 
