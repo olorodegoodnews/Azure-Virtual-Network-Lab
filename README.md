@@ -196,4 +196,35 @@ A company hosting a public website may create an inbound rule to allow HTTP (por
 - Inbound Security Rules
 - Network Traffic Filtering
 - Azure Networking Security
-- 
+
+
+
+
+  ## Project Summary
+  In this project, I successfully built a basic Azure network infrastructure using Microsoft Azure. I created a Resource Group to organize resources, deployed a Virtual Network, configured a custom subnet (Subnet11), and secured the network by creating a Network Security Group (NSG).
+
+This project strengthened my understanding of Azure networking fundamentals. It also provided hands-on experience with deploying and managing networking resources through the Azure Portal.
+  
+The project included:
+
+- Creating a Resource Group
+- Deploying a Virtual Network
+- Creating Subnet11
+- Deploying a Network Security Group (NSG)
+- Associating the NSG with the subnet
+- Reviewing inbound security rules
+- Reviewing outbound security rules
+
+This project demonstrates the foundational Azure networking skills required for cloud administration and aligns with Microsoft AZ-104 learning objectives.
+
+
+## Skills Demonstrated
+
+- Azure Resource Management
+- Azure Virtual Networks
+- Azure Subnets
+- Network Security Groups
+- Inbound Security Rules
+- Outbound Security Rules
+- Network Segmentation
+- Azure Portal Administration
