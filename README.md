@@ -21,7 +21,7 @@
 ## Lessons Learned
 
 
-## References# 
+## References
 
 
 Azure-Virtual-Network-Lab
