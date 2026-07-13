@@ -1,4 +1,31 @@
-# Azure-Virtual-Network-Lab
+# Azure Virtual Network Lab
+
+## Project Overview
+
+## Objectives
+
+## Azure Services Used
+
+## Step 1 – Create a Virtual Network
+
+## Step 2 – Create a Resource Group
+
+## Step 3 – Create Subnet11
+
+## Step 4 – Create a Network Security Group (NSG)
+
+## Project Summary
+
+## Skills Demonstrated
+
+## Lessons Learned
+
+
+## References# 
+
+
+Azure-Virtual-Network-Lab
+
 Deploying and configuring an Azure Virtual Network with subnets and network security in Microsoft Azure.
 
 ## Project Overview
@@ -14,7 +41,6 @@ This project demonstrates how I deployed and configured an Azure Virtual Network
 - Secure the network using a Network Security Group (NSG)
 
 ## Azure Services Used
-
 
 ## Step 1 – Create a Network Security Group (NSG)
 
