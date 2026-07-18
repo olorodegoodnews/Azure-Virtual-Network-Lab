@@ -60,9 +60,7 @@ A Network Security Group (NSG) is an Azure networking service that controls inbo
 
 Network Security Groups provide an additional layer of security by filtering network traffic based on rules. This helps ensure that only authorized traffic can reach resources deployed within the Virtual Network.
 
-### Screenshot
 
-![Network Security Group Overview](screenshots/05-network-security-group-overview.png)
 
 ## Key Learning
 
@@ -104,18 +102,12 @@ A Resource Group is a logical container in Microsoft Azure that holds related re
 
 Using a Resource Group allows all resources for this networking project to be managed as a single unit. This simplifies administration and helps with cost management and organization.
 
-### Screenshot
-
-![Resource Group Overview](screenshots/02-resource-group-overview.png)
-
 
 ## Interview Question
 
 **Question:** What is a Resource Group in Azure?
 
 **Answer:** A Resource Group is a logical container that groups related Azure resources together. It helps organize, manage, monitor, and control access to resources within a project.
-![Virtual Network Overview](screenshots/01-vnet-overview.png)
-- Azure Network Security Groups
 
 
 
@@ -136,10 +128,6 @@ A subnet divides a Virtual Network into smaller network segments. This improves 
 
 Creating a dedicated subnet allows Azure resources to be logically separated within the Virtual Network. This makes it easier to apply security controls, manage network traffic, and isolate workloads as the environment grows.
 
-### Screenshot
-
-![Subnet11 Configuration](screenshots/03-subnet11-configuration.png)
-
 ## Key Learning
 
 In this step, I learned how to create and configure subnets within an Azure Virtual Network. Subnets help organize resources, reduce unnecessary network traffic, and provide better security by separating workloads into different network segments.
@@ -155,7 +143,7 @@ In this step, I learned how to create and configure subnets within an Azure Virt
 
 **Question:** What is the purpose of a subnet in Azure?
 
-**Answer:** A subnet is a smaller network within a Virtual Network. It allows Azure resources to be organized into separate network segments, improving security, performance, and management.
+**Answer:** A subnet is a smaller network within a Virtual Network. It allows Azure resources to be organzed into separate network segments, improving security, performance, and management.
 
 
 ## Step 4 – Review Inbound Security Rules
@@ -177,10 +165,6 @@ Azure automatically creates several default inbound rules for every Network Secu
 ### Why This Is Important
 
 These default rules provide a secure baseline. Additional custom rules can be added to allow services such as HTTP, HTTPS, RDP, or SSH when required.
-
-### Screenshot
-
-![Inbound Security Rules](screenshots/07-inbound-security-rules.png)
 
 ## Key Learning
 
